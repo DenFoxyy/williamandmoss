@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>William and Moss</title>
+    <meta charset="utf-8"/>
+
+    <link rel="icon" href="faviconw.png" type="image/ico" size="32x32">
+
+    <style>
+        body.dark-mode {
+            background-color: rgb(0, 0, 0);
+            color: white;
+        }
+        body.light-mode {
+            background-color: white;
+            color: black;
+        }
+
+        #konteiner {
+            width: 1000px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        h1 {
+            font-size: 60pt;
+            font-family: Arial Black;
+            text-align: center;
+            color: inherit; /* Set text color to inherit from body */
+        }
+
+        h2, p {
+            color: inherit; /* Set text color to inherit from body */
+        }
+
+        p {
+            font-size: 16pt;
+            font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif
+        }
+
+    
+
+        .bilde {
+            margin: 10px;
+            width: 300px;
+            height: auto;
+            margin: 15px;
+        }
+
+        .venstre {
+            float: left;
+        }
+
+        .hoyre {
+            float: right;
+        }
+
+        #b3 {
+            width: 400px;
+        }
+
+        #b2 {
+            width: 200px;
+        }
+
+        /* Style for the button */
+        #mode-toggle {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 20px;
+            background-color: yellow;
+            color: black;
+            border: none;
+            border-radius: 50%; /* Make button round */
+            cursor: pointer;
+            z-index: 1000;
+        }
+
+        /* Style for the headings */
+        h2 {
+            font-size: 24pt; /* Bigger font size for "Welcome to our city called Moss" */
+            font-family: Arial Black;
+        }
+
+        #meet-william {
+            font-size: 24pt; /* Bigger font size for "Meet William" */
+            font-family: Arial Black;
+        }
+    </style>
+</head>
+<body class="light-mode">
+    <button id="mode-toggle" onclick="toggleMode()">Toggle Dark/Light Mode</button>
+    <h1>Experience the charm of Moss: Riding William's arched back</h1>
+
+    <img src="bilder3.JPG" alt="He is gone" class="bilde hoyre" id="b3" />
+    <p>Moss offers a unique experience where residents and tourists love riding on William's arched back.</p>
+    <p>Explore this charming city.</p>
+    <article>
+        </p><br/>
+
+        <h2>Welcome to our city called Moss</h2>
+        <p>
+            Welcome to Moss a small city in Norway, where residents adore William and his uniquely arched back. It's a cherished tradition for everyone to take turns riding on his back, symbolizing unity and joy in the community.
+        </p>
+        <p>
+            With William as a beloved figure, Moss embraces acceptance and inclusivity, making it a special place to visit.
+        </p>
+        <img src="bilder2.JPG" alt="He is gone" class="bilde venstre" id="b2" />
+        <article>
+            <h2 id="meet-william">Meet William</h2>
+            <p>Meet William, a guy with an arched back like a wheel. Despite his unusual physique, he's gritty and loves money.</p>
+            <p>He's also a big fan of avocados, incorporating them into every meal. He likes smoothies with avocados. William is wanted in a few countries.</p>
+        </article>
+
+    <footer>
+        <p>&copy; Denys 2024, Moss</p>
+    </footer>
+
+    <script>
+        // Function to toggle between light and dark mode
+        function toggleMode() {
+            var body = document.body;
+            body.classList.toggle("dark-mode");
+            body.classList.toggle("light-mode");
+        }
+    </script>
+</body>
+</html>
